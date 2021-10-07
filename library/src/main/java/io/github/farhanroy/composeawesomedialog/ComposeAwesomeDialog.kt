@@ -17,12 +17,6 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 
-val Shapes = Shapes(
-    small = RoundedCornerShape(4.dp),
-    medium = RoundedCornerShape(4.dp),
-    large = RoundedCornerShape(10.dp)
-)
-
 @Composable
 fun AlertDialogSample() {
     MaterialTheme {
@@ -36,28 +30,6 @@ fun AlertDialogSample() {
             }
 
             if (openDialog.value) {
-                Dialog(onDismissRequest = { openDialog.value = false }) {
-                    Box(
-                        Modifier
-                            .width(300.dp)
-                            .height(300.dp)) {
-                        Column(
-                            Modifier
-                                .width(300.dp)
-                                .height(300.dp)
-                        ) {
-                            Spacer(Modifier.height(36.dp))
-                            Box(
-                                Modifier
-                                    .width(300.dp)
-                                    .height(164.dp)
-                                    .background(color = Color.White, shape = Shapes.large)) {
-                                
-                            }
-                        }
-                        FlareHeader(Modifier.size(72.dp).align(Alignment.TopCenter).border(border = BorderStroke(width = 2.dp, color = Color.White), shape = CircleShape))
-                    }
-                }
             }
         }
 
