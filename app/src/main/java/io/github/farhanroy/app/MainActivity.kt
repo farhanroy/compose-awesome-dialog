@@ -5,11 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import io.github.farhanroy.app.ui.theme.ComposeAwesomeDialogTheme
-import io.github.farhanroy.composeawesomedialog.AlertDialogSample
+import io.github.farhanroy.composeawesomedialog.ComposeAwesomeDialog
+import io.github.farhanroy.composeawesomedialog.utils.ComposeAwesomeDialogType
 
 
 class MainActivity : ComponentActivity() {
@@ -28,5 +27,5 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
- AlertDialogSample()
+ ComposeAwesomeDialog(type = ComposeAwesomeDialogType.Info)
 }

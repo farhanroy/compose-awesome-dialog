@@ -3,6 +3,7 @@ package io.github.farhanroy.composeawesomedialog
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
@@ -15,7 +16,7 @@ fun InfoHeader(modifier: Modifier) {
     LottieAnimation(
         composition,
         progress,
-        modifier = modifier
+        modifier = modifier,
     )
 }
 
@@ -26,7 +27,7 @@ fun SuccessHeader(modifier: Modifier) {
     LottieAnimation(
         composition,
         progress,
-        modifier = modifier
+        modifier = modifier,
     )
 }
 
