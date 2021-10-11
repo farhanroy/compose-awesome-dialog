@@ -25,8 +25,8 @@ fun ComposeAwesomeDialog(
     MaterialTheme {
         when (type) {
             ComposeAwesomeDialogType.Success -> { SuccessDialog(onDismiss = onDismiss) }
-            ComposeAwesomeDialogType.Error -> { ErrorDialog() }
-            ComposeAwesomeDialogType.Info -> { InfoDialog() }
+            ComposeAwesomeDialogType.Error -> { ErrorDialog(onDismiss = onDismiss) }
+            ComposeAwesomeDialogType.Info -> { InfoDialog(onDismiss = onDismiss) }
         }
 
     }
