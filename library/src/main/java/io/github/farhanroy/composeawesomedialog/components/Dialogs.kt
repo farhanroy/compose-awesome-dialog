@@ -20,8 +20,8 @@ import io.github.farhanroy.composeawesomedialog.SuccessHeader
 import io.github.farhanroy.composeawesomedialog.themes.Shapes
 
 @Composable
-fun SuccessDialog() {
-    Dialog(onDismissRequest = {  }) {
+fun SuccessDialog( onDismiss: () -> Unit) {
+    Dialog(onDismissRequest = onDismiss ) {
         Box(
             Modifier
                 .width(300.dp)
@@ -37,7 +37,19 @@ fun SuccessDialog() {
                         .width(300.dp)
                         .height(164.dp)
                         .background(color = Color.White, shape = Shapes.large)) {
-
+                    Column(
+                        modifier = Modifier.padding(16.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Spacer(modifier = Modifier.height(24.dp))
+                        Text("Apakah anda yakin ?", style = TextStyle(fontSize = 18.sp))
+                        Spacer(modifier = Modifier.height(24.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth()) {
+                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                        }
+                    }
                 }
             }
             SuccessHeader(
@@ -53,8 +65,8 @@ fun SuccessDialog() {
 }
 
 @Composable
-fun ErrorDialog() {
-    Dialog(onDismissRequest = {  }) {
+fun ErrorDialog(onDismiss: () -> Unit) {
+    Dialog(onDismissRequest = onDismiss) {
         Box(
             Modifier
                 .width(300.dp)
@@ -70,9 +82,18 @@ fun ErrorDialog() {
                         .width(300.dp)
                         .height(164.dp)
                         .background(color = Color.White, shape = Shapes.large)) {
-                    Row(horizontalArrangement = Arrangement.SpaceBetween) {
-                       OkButton()
-                       CancelButton()
+                    Column(
+                        modifier = Modifier.padding(16.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Spacer(modifier = Modifier.height(24.dp))
+                        Text("Apakah anda yakin ?", style = TextStyle(fontSize = 18.sp))
+                        Spacer(modifier = Modifier.height(24.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth()) {
+                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                        }
                     }
                 }
             }
@@ -89,8 +110,8 @@ fun ErrorDialog() {
 }
 
 @Composable
-fun InfoDialog() {
-    Dialog(onDismissRequest = {  }) {
+fun InfoDialog(onDismiss: () -> Unit) {
+    Dialog(onDismissRequest = onDismiss) {
         Box(
             Modifier
                 .width(300.dp)
