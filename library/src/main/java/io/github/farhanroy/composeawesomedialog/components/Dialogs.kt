@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
@@ -20,7 +21,11 @@ import io.github.farhanroy.composeawesomedialog.SuccessHeader
 import io.github.farhanroy.composeawesomedialog.themes.Shapes
 
 @Composable
-fun SuccessDialog( onDismiss: () -> Unit) {
+fun SuccessDialog(
+    title: String = "",
+    desc: String = "",
+    onDismiss: () -> Unit
+) {
     Dialog(onDismissRequest = onDismiss ) {
         Box(
             Modifier
@@ -42,12 +47,14 @@ fun SuccessDialog( onDismiss: () -> Unit) {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Spacer(modifier = Modifier.height(24.dp))
-                        Text("Apakah anda yakin ?", style = TextStyle(fontSize = 18.sp))
+                        Text(title.uppercase(), style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold))
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(desc, style = TextStyle(fontSize = 14.sp, ))
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
-                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
                             CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
                         }
                     }
                 }
@@ -65,7 +72,11 @@ fun SuccessDialog( onDismiss: () -> Unit) {
 }
 
 @Composable
-fun ErrorDialog(onDismiss: () -> Unit) {
+fun ErrorDialog(
+    title: String = "",
+    desc: String = "",
+    onDismiss: () -> Unit
+) {
     Dialog(onDismissRequest = onDismiss) {
         Box(
             Modifier
@@ -87,7 +98,9 @@ fun ErrorDialog(onDismiss: () -> Unit) {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Spacer(modifier = Modifier.height(24.dp))
-                        Text("Apakah anda yakin ?", style = TextStyle(fontSize = 18.sp))
+                        Text(title.uppercase(), style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold))
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(desc, style = TextStyle(fontSize = 14.sp, ))
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
@@ -110,7 +123,11 @@ fun ErrorDialog(onDismiss: () -> Unit) {
 }
 
 @Composable
-fun InfoDialog(onDismiss: () -> Unit) {
+fun InfoDialog(
+    title: String = "",
+    desc: String = "",
+    onDismiss: () -> Unit,
+) {
     Dialog(onDismissRequest = onDismiss) {
         Box(
             Modifier
@@ -132,7 +149,9 @@ fun InfoDialog(onDismiss: () -> Unit) {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Spacer(modifier = Modifier.height(24.dp))
-                        Text("Apakah anda yakin ?", style = TextStyle(fontSize = 18.sp))
+                        Text(title.uppercase(), style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold))
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(desc, style = TextStyle(fontSize = 14.sp, ))
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
