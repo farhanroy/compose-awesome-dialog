@@ -10,13 +10,15 @@ import io.github.farhanroy.composeawesomedialog.utils.ComposeAwesomeDialogType
 @Composable
 fun ComposeAwesomeDialog(
     type: ComposeAwesomeDialogType,
+    title: String,
+    desc: String,
     onDismiss: () -> Unit
 ) {
     MaterialTheme {
         when (type) {
-            ComposeAwesomeDialogType.Success -> { SuccessDialog(onDismiss = onDismiss) }
-            ComposeAwesomeDialogType.Error -> { ErrorDialog(onDismiss = onDismiss) }
-            ComposeAwesomeDialogType.Info -> { InfoDialog(onDismiss = onDismiss) }
+            ComposeAwesomeDialogType.Success -> { SuccessDialog(title =  title, desc = desc, onDismiss = onDismiss) }
+            ComposeAwesomeDialogType.Error -> { ErrorDialog(title =  title, desc = desc,onDismiss = onDismiss) }
+            ComposeAwesomeDialogType.Info -> { InfoDialog (title =  title, desc = desc, onDismiss = onDismiss) }
         }
 
     }

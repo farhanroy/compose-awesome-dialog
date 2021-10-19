@@ -39,6 +39,8 @@ fun Greeting() {
     if (openDialog.value) {
         ComposeAwesomeDialog(
             type = ComposeAwesomeDialogType.Success,
+            title = "",
+            desc = "",
             onDismiss = { openDialog.value = false }
         )
     }
