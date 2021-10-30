@@ -30,7 +30,7 @@ fun SuccessDialog(
         Box(
             Modifier
                 .width(300.dp)
-                .height(300.dp)) {
+                .height(400.dp)) {
             Column(
                 Modifier
                     .width(300.dp)
@@ -53,8 +53,15 @@ fun SuccessDialog(
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
-                            CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
-                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            CancelButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
+                            Spacer(modifier = Modifier.width(8.dp))
+                            OkButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
                         }
                     }
                 }
@@ -104,8 +111,15 @@ fun ErrorDialog(
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
-                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
-                            CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            OkButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
+                            Spacer(modifier = Modifier.width(8.dp))
+                            CancelButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
                         }
                     }
                 }
@@ -155,8 +169,15 @@ fun InfoDialog(
                         Spacer(modifier = Modifier.height(24.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth()) {
-                            OkButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
-                            CancelButton(Modifier.fillMaxWidth().weight(1f).padding(4.dp))
+                            OkButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
+                            Spacer(modifier = Modifier.width(8.dp))
+                            CancelButton(
+                                Modifier
+                                    .fillMaxWidth()
+                                    .weight(1f))
                         }
                     }
                 }
