@@ -1,7 +1,11 @@
-# Compose Country Code 
+# Compose Awesome Dialog 
 ![Jitpack](https://jitpack.io/v/farhanroy/compose-awesome-dialog.svg) ![GitHub issues](https://img.shields.io/github/issues/farhanroy/compose-awesome-dialog)  [![GitHub forks](https://img.shields.io/github/forks/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/network) [![GitHub stars](https://img.shields.io/github/stars/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/stargazers) [![GitHub license](https://img.shields.io/github/license/farhanroy/compose-awesome-dialog)](https://github.com/farhanroy/compose-awesome-dialog/blob/master/License.txt) 
  
-Country code picker for Jetpack Compose.
+Library untuk Android Native yang menggunakan Jetpack Compose untuk toolkit UI nya. Compose Awesome Dialog ini menampilkan Dialog material yang dilengkapi animasi agar lebih ciamik
+
+Anda tidak perlu lagi membuat lagi komponen dialog dari awal tinggal install library ini.
+
+**Lihat contoh run app nya** biar bisa lebih jelas
 
 ## How to add in your project
 In the `build.gradle` add maven central repository
