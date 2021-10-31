@@ -1,4 +1,6 @@
 # Compose Awesome Dialog 
+![](https://raw.githubusercontent.com/farhanroy/compose-awesome-dialog/main/screenshots/Frame%201.png)
+ 
 ![Jitpack](https://jitpack.io/v/farhanroy/compose-awesome-dialog.svg) ![GitHub issues](https://img.shields.io/github/issues/farhanroy/compose-awesome-dialog)  [![GitHub forks](https://img.shields.io/github/forks/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/network) [![GitHub stars](https://img.shields.io/github/stars/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/stargazers) [![GitHub license](https://img.shields.io/github/license/farhanroy/compose-awesome-dialog)](https://github.com/farhanroy/compose-awesome-dialog/blob/master/License.txt) 
  
 Library untuk Android Native yang menggunakan Jetpack Compose untuk toolkit UI nya. Compose Awesome Dialog ini menampilkan Dialog material yang dilengkapi animasi agar lebih ciamik
