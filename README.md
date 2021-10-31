@@ -1,5 +1,5 @@
 # Compose Country Code 
-![Jitpack](https://jitpack.io/v/farhanroy/ComposeCountryCodePicker.svg) ![GitHub issues](https://img.shields.io/github/issues/farhanroy/ComposeCountryCodePicker)  [![GitHub forks](https://img.shields.io/github/forks/farhanroy/ComposeCountryCodePicker)](https://github.com/hbb20/CountryCodePickerProject/network) [![GitHub stars](https://img.shields.io/github/stars/farhanroy/ComposeCountryCodePicker)](https://github.com/hbb20/CountryCodePickerProject/stargazers) [![GitHub license](https://img.shields.io/github/license/farhanroy/ComposeCountryCodePicker)](https://github.com/hbb20/CountryCodePickerProject/blob/master/License.txt) 
+![Jitpack](https://jitpack.io/v/farhanroy/compose-awesome-dialog.svg) ![GitHub issues](https://img.shields.io/github/issues/farhanroy/compose-awesome-dialog)  [![GitHub forks](https://img.shields.io/github/forks/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/network) [![GitHub stars](https://img.shields.io/github/stars/farhanroy/compose-awesome-dialog)](https://github.com/hbb20/CountryCodePickerProject/stargazers) [![GitHub license](https://img.shields.io/github/license/farhanroy/compose-awesome-dialog)](https://github.com/farhanroy/compose-awesome-dialog/blob/master/License.txt) 
  
 Country code picker for Jetpack Compose.
 
@@ -12,7 +12,9 @@ repositories {
 ```
 Then, add library at `app/build.gradle` with following code
 ```groove
-implementation 'com.github farhanroy:ComposeCountryCodePicker:Tag'
+    dependencies {
+	        implementation 'com.github.farhanroy:compose-awesome-dialog:Tag'
+    }
 ```
 
 ## How to use ?
